@@ -1,0 +1,37 @@
+{
+    "name": "poing/beacon",
+    "description": "Laravel package to generate tracking codes.",
+    "version": "0.0.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "poing",
+            "email": "brian.lavallee@invite-comm.jp"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^12.20",
+        "illuminate/events": "^12.20",
+        "illuminate/filesystem": "^12.20",
+        "illuminate/support": "^12.20"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.4",
+        "phpunit/phpunit": "^11.5",
+        "php-coveralls/php-coveralls": "^2.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Poing\\Beacon\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Poing\\Beacon\\BeaconServiceProvider"
+            ]
+        }
+    }
+}
